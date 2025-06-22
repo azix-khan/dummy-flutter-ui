@@ -37,6 +37,9 @@ Here are the different UI challenges included in this repository:
 ### 7. Sliding Login Screen
 - A login screen with a sliding animation effect for the login form. This challenge demonstrates how to transition between multiple states like login, signup, and password reset.
 
+### 8. 3D beautiful UI using O3D dependency
+- The Flutter 3D objects easy controller ( glb format ) on mobile and web platforms
+
 ## Installation
 
 To get started, clone the repository and run the project locally.
