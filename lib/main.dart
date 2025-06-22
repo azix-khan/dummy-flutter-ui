@@ -1,4 +1,4 @@
-import 'package:dummy/apple_liquid_glass.dart';
+import 'package:dummy/ui_3d_flutter/ui_o3d.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'dummy app for linkedin posting',
-      home: Scaffold(
-        // appBar: AppBar(backgroundColor: Colors.grey[300]),
-        body: const LiquidGlassHome(),
-      ),
+      title: 'Flutter 3D beautiful ui using O3D dependency',
+      home: Scaffold(body: const UIO3D()),
     );
   }
 }
