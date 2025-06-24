@@ -1,4 +1,4 @@
-import 'package:dummy/ui_3d_flutter/ui_o3d.dart';
+import 'package:dummy/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter 3D beautiful ui using O3D dependency',
-      home: Scaffold(body: const UIO3D()),
+      title: 'Flutter Dummy UI Challenges',
+      home: const Onboarding(),
     );
   }
 }
