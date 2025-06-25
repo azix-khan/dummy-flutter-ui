@@ -12,14 +12,17 @@ class PagesBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        // big container with image
         Container(
           height: MediaQuery.of(context).size.height * 0.8,
           padding: const EdgeInsets.all(40),
-          color: Colors.cyan[900],
+          color: Colors.white60,
+          // color: Colors.cyan[900],
           child: widget,
         ),
+        // small container with title and content
         Container(
-          color: Colors.black,
+          color: Colors.white,
           height: MediaQuery.of(context).size.height * 0.2,
           width: MediaQuery.of(context).size.width,
           child: Column(
@@ -29,7 +32,8 @@ class PagesBody extends StatelessWidget {
                 title!,
                 style: TextStyle(
                   fontSize: 24,
-                  color: Colors.grey[400],
+                  color: Colors.black,
+                  // color: Colors.grey[400],
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -39,7 +43,8 @@ class PagesBody extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.grey[400],
+                  color: Colors.black38,
+                  // color: Colors.grey[400],
                   fontWeight: FontWeight.normal,
                 ),
               ),

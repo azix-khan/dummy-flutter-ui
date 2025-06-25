@@ -33,6 +33,7 @@ class _OnboardingState extends State<Onboarding> {
     final _width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.cyan[900],
+      // backgroundColor: Colors.cyan[900],
       body: Stack(
         children: [
           PageView(
@@ -45,7 +46,7 @@ class _OnboardingState extends State<Onboarding> {
               ),
               PagesBody(
                 widget: darkScreensGrid,
-                title: "Keep paying via Azizi",
+                title: "Keep paying via Simpl",
                 content:
                     "Order food, groceries or medicines across your favourite apps",
               ),
@@ -74,7 +75,7 @@ class _OnboardingState extends State<Onboarding> {
                                 10,
                               ),
                               child: Text(
-                                "PAY 1,999",
+                                "PAY 3,999",
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: Colors.grey[300],
@@ -259,9 +260,9 @@ class _OnboardingState extends State<Onboarding> {
                 controller: controller,
                 count: 3,
                 effect: WormEffect(
-                  activeDotColor: Colors.white,
+                  activeDotColor: Colors.cyanAccent,
                   spacing: responsiveSize(8, context),
-                  dotColor: Colors.white.withOpacity(0.5),
+                  dotColor: Colors.black12.withOpacity(0.5),
                   dotWidth: responsiveSize(9, context),
                   dotHeight: responsiveSize(9, context),
                 ),
