@@ -107,7 +107,7 @@ class _OnboardingState extends State<Onboarding> {
                     : ((1 - currentPageValue) * _width * 2) - 155,
             child: Center(
               child: Image.asset(
-                "assets/onboarding_assets/your_business_logo.jpg",
+                "assets/onboarding_assets/simplpay.png",
                 width:
                     currentPageValue < 1 ? 330 - (currentPageValue * 170) : 160,
               ),
@@ -126,7 +126,7 @@ class _OnboardingState extends State<Onboarding> {
                     : ((1 - currentPageValue) * _width * 2) - 155,
             child: Center(
               child: Image.asset(
-                "assets/onboarding_assets/your_business_logo.jpg",
+                "assets/onboarding_assets/simplpay.png",
                 width:
                     currentPageValue < 1 ? 330 - (currentPageValue * 170) : 160,
               ),
@@ -144,7 +144,7 @@ class _OnboardingState extends State<Onboarding> {
                     : ((1 - currentPageValue) * _width * 2) - 155,
             child: Center(
               child: Image.asset(
-                "assets/onboarding_assets/your_business_logo.jpg",
+                "assets/onboarding_assets/simplpay.png",
                 width:
                     currentPageValue < 1 ? 330 - (currentPageValue * 170) : 160,
               ),
@@ -163,7 +163,7 @@ class _OnboardingState extends State<Onboarding> {
                     : ((1 - currentPageValue) * _width * 2) - 155,
             child: Center(
               child: Image.asset(
-                "assets/onboarding_assets/your_business_logo.jpg",
+                "assets/onboarding_assets/simplpay.png",
                 width:
                     currentPageValue < 1 ? 330 - (currentPageValue * 170) : 160,
               ),
@@ -184,7 +184,7 @@ class _OnboardingState extends State<Onboarding> {
                     : ((1 - currentPageValue) * _width) - 155,
             child: Center(
               child: Image.asset(
-                "assets/onboarding_assets/onboarding_merchant1.jpg",
+                "assets/onboarding_assets/onboarding_merchant1.png",
                 width: 100,
               ),
             ),
@@ -245,7 +245,7 @@ class _OnboardingState extends State<Onboarding> {
                     : ((1 - currentPageValue) * _width) + 155,
             child: Center(
               child: Image.asset(
-                "assets/onboarding_assets/onboarding_merchant4.jpg",
+                "assets/onboarding_assets/onboarding_merchant4.png",
                 width: 70,
               ),
             ),
