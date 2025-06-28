@@ -40,6 +40,9 @@ Here are the different UI challenges included in this repository:
 ### 8. 3D beautiful UI using O3D dependency
 - The Flutter 3D objects easy controller ( glb format ) on mobile and web platforms
 
+### 9. Onboarding UI
+- Onboarding UI inspired by Simpl app
+
 ## Installation
 
 To get started, clone the repository and run the project locally.
