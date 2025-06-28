@@ -1,4 +1,4 @@
-import 'package:dummy/onboarding/onboarding.dart';
+import 'package:dummy/SpaceX_API/spacex_launches_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Dummy UI Challenges',
-      home: const Onboarding(),
+      home: const SpaceXLaunchesScreen(),
     );
   }
 }
