@@ -128,10 +128,6 @@ class _SpaceXLaunchesScreenState extends State<SpaceXLaunchesScreen> {
                 final success = launch['success'];
                 final details = launch['details'] ?? 'No description available';
                 final dateStr = launch['date_utc'] ?? '';
-                // final dateTime =
-                //     dateStr.isNotEmpty ? DateTime.tryParse(dateStr) : null;
-
-                // if (dateTime == null) return const SizedBox.shrink();
 
                 DateTime? dateTime;
                 try {
