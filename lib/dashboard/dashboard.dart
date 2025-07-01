@@ -1,7 +1,7 @@
 import 'package:dummy/dashboard/animation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:fl_chart/fl_chart.dart';
 
 class DashboardOnePage extends StatelessWidget {
   static const String path = "lib/dashboard/dashboard.dart";
@@ -25,7 +25,8 @@ class DashboardOnePage extends StatelessWidget {
               "Sales",
               child: SizedBox(
                 height: 200,
-                child: DonutPieChart.withSampleData(),
+                child:
+                    DonutPieChart.withSampleData(), // Updated to use DonutPieChart from fl_chart
               ),
             ),
           ),
@@ -199,62 +200,66 @@ class DashboardOnePage extends StatelessWidget {
 }
 
 class DonutPieChart extends StatelessWidget {
-  final List<charts.Series> seriesList;
+  final List<PieChartSectionData> sections;
   final bool animate;
 
-  const DonutPieChart(this.seriesList, {super.key, required this.animate});
+  const DonutPieChart({
+    super.key,
+    required this.sections,
+    required this.animate,
+  });
 
-  /// Creates a [PieChart] with sample data and no transition.
   factory DonutPieChart.withSampleData() {
-    return DonutPieChart(
-      _createSampleData(),
-      // Disable animations for image tests.
-      animate: false,
-    );
+    return DonutPieChart(sections: _createSampleData(), animate: true);
   }
 
   @override
   Widget build(BuildContext context) {
-    return charts.PieChart(
-      seriesList,
-      animate: animate,
-      // Configure the width of the pie slices to 60px. The remaining space in
-      // the chart will be left as a hole in the center.
-      defaultRenderer: charts.ArcRendererConfig(
-        arcWidth: 60,
-        arcRendererDecorators: [charts.ArcLabelDecorator()],
+    return PieChart(
+      PieChartData(
+        sections: sections,
+        centerSpaceRadius: 50, // Makes it a donut chart
+        sectionsSpace: 5, // Space between sections
       ),
     );
   }
 
-  /// Create one series with sample hard coded data.
-  static List<charts.Series<LinearSales, String>> _createSampleData() {
-    final data = [
-      LinearSales("July", 100),
-      LinearSales("August", 75),
-      LinearSales("September", 25),
-      LinearSales("October", 5),
-    ];
-
+  // Create some sample data
+  static List<PieChartSectionData> _createSampleData() {
     return [
-      charts.Series<LinearSales, String>(
-        id: 'Sales',
-        domainFn: (LinearSales sales, _) => sales.month,
-        measureFn: (LinearSales sales, _) => sales.sales,
-        data: data,
+      PieChartSectionData(
+        value: 40,
+        color: Colors.blue,
+        title: 'July',
+        radius: 50,
+        titleStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+      ),
+      PieChartSectionData(
+        value: 25,
+        color: Colors.red,
+        title: 'August',
+        radius: 50,
+        titleStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+      ),
+      PieChartSectionData(
+        value: 15,
+        color: Colors.green,
+        title: 'September',
+        radius: 50,
+        titleStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+      ),
+      PieChartSectionData(
+        value: 20,
+        color: Colors.orange,
+        title: 'October',
+        radius: 50,
+        titleStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
       ),
     ];
   }
 }
 
-/// Sample linear data type.
-class LinearSales {
-  final String month;
-  final int sales;
-
-  LinearSales(this.month, this.sales);
-}
-
+/// Sample activity data
 class Activity {
   final String title;
   final IconData icon;
