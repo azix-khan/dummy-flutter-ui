@@ -1,6 +1,6 @@
 /*
 
-CODE WITH AZIZ UR RAHMAN
+CODED BY AZIZ UR RAHMAN
 https://www.github.com/azix-khan 
  
 */
