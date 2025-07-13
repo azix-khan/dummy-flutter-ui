@@ -18,6 +18,7 @@ Here are the different UI challenges included in this repository:
 
 ### 1. Apple Liquid Glass UI
 - A liquid glass effect UI, inspired by Apple's design aesthetics, where a smooth, animated transition gives a liquid look to UI elements.
+- 🎥 [Watch Demo](https://github.com/azix-khan/dummy-flutter-ui/assets/demos/apple_luqid_glass.mp4)
 
 ### 2. Flying Widget
 - A widget animation that gives the illusion of flying or floating across the screen with smooth transitions.
