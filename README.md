@@ -43,6 +43,9 @@ Here are the different UI challenges included in this repository:
 ### 9. Onboarding UI
 - Onboarding UI inspired by Simpl app
 
+### 10. Ticket Booking UI
+- Ticket Booking UI inspired by Movies applications
+
 ## Installation
 
 To get started, clone the repository and run the project locally.
