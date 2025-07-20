@@ -5,11 +5,11 @@ https://www.github.com/azix-khan
  
 */
 
-import 'package:dummy/ticket_booking/ticket_booking.dart';
+import 'package:dummy/coffee_machine_animation/CoffeeApp.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CoffeeApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Dummy UI Challenges',
-      home: TicketBooking(),
+      // home: TicketBooking(),
     );
   }
 }

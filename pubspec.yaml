@@ -22,6 +22,9 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   flutter_swiper_null_safety: ^1.0.2
   cached_network_image: ^3.4.1
+  ## coffee machine animations
+  wave: ^0.2.2
+  add_to_cart_animation: ^2.0.4
 
 dev_dependencies:
   flutter_test:
@@ -41,6 +44,7 @@ flutter:
     - assets/
     - assets/o3d_UI_assets/
     - assets/onboarding_assets/
+    - assets/coffee_machine_assets/
     # - images/a_dot_ham.jpeg
 
   # fonts:
